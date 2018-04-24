@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="242.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment2.FXMLDocumentController">
+    <children>
+      <Pane prefHeight="356.0" prefWidth="583.0" style="-fx-background-color: deepskyblue;">
+         <children>
+            <BorderPane layoutX="12.0" layoutY="10.0" prefHeight="334.0" prefWidth="565.0">
+               <top>
+                  <Pane prefHeight="50.0" prefWidth="564.0" style="-fx-background-color: orange; -fx-border-color: black;" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets bottom="5.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <Label layoutX="164.0" layoutY="11.0" text="Auto Care Center LLC" textAlignment="CENTER">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </top>
+               <center>
+                  <Pane prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: khaki; -fx-border-color: black;" BorderPane.alignment="CENTER">
+                     <children>
+                        <CheckBox fx:id="chkBrakes" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#updateCost" text="Brakes" />
+                        <CheckBox fx:id="chkTireRot" layoutX="14.0" layoutY="60.0" mnemonicParsing="false" onAction="#updateCost" text="Tire Rotation" />
+                        <CheckBox fx:id="chkFluid" layoutX="14.0" layoutY="95.0" mnemonicParsing="false" onAction="#updateCost" text="Fluid Check" />
+                        <CheckBox fx:id="chkCar" layoutX="14.0" layoutY="130.0" mnemonicParsing="false" onAction="#updateCost" text="Car Wash" />
+                        <CheckBox fx:id="chkAEI" layoutX="14.0" layoutY="165.0" mnemonicParsing="false" onAction="#updateCost" text="Annual Emission Inspection" />
+                     </children>
+                  </Pane>
+               </center>
+               <right>
+                  <Pane prefHeight="50.0" prefWidth="165.0" style="-fx-background-color: khaki; -fx-border-color: black;" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="5.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <CheckBox fx:id="chkTireRep" layoutX="17.0" layoutY="14.0" mnemonicParsing="false" onAction="#updateCost" text="Tire Replacement" />
+                        <ChoiceBox fx:id="tireTypeBox" disable="true" layoutX="40.0" layoutY="40.0" prefHeight="27.0" prefWidth="117.0" />
+                        <CheckBox fx:id="chkOil" layoutX="17.0" layoutY="107.0" mnemonicParsing="false" onAction="#updateCost" text="Oil Change" />
+                        <ChoiceBox fx:id="oilTypeBox" disable="true" layoutX="40.0" layoutY="130.0" prefHeight="27.0" prefWidth="117.0" />
+                     </children>
+                  </Pane>
+               </right>
+               <bottom>
+                  <Pane prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-color: black;" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets top="5.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <Button fx:id="btnReset" layoutX="463.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleReset" style="-fx-background-color: deepskyblue;" text="Reset Form" />
+                          <Button fx:id="btnPrint" layoutX="348.0" layoutY="12.0" onAction="#handleInvoice" style="-fx-background-color: deepskyblue;" text="Print Invoice" />
+                          <Label fx:id="lblService" layoutX="20.0" layoutY="10.0" minHeight="25.0" minWidth="150.0" prefHeight="25.0" prefWidth="274.0" text="Service Cost:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </bottom>
+               <left>
+                  <VBox prefHeight="200.0" prefWidth="170.0" style="-fx-background-color: deepskyblue;" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets right="5.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <Pane prefHeight="100.0" prefWidth="170.0" style="-fx-background-color: khaki; -fx-border-color: black;">
+                           <children>
+                              <RadioButton fx:id="newCustomer" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#updateCost" selected="true" text="New Customer">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="group" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="regCustomer" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#updateCost" text="Regular Customer" toggleGroup="$group" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="119.0" prefWidth="170.0" style="-fx-background-color: khaki; -fx-border-color: black;">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label alignment="CENTER_RIGHT" layoutX="5.0" layoutY="10.0" prefHeight="17.0" prefWidth="55.0" text="Name:" />
+                              <TextField fx:id="nameInput" layoutX="70.0" layoutY="6.0" prefHeight="27.0" prefWidth="99.0" />
+                              <TextField fx:id="phoneInput" layoutX="70.0" layoutY="33.0" prefHeight="27.0" prefWidth="99.0" />
+                              <TextField fx:id="eInput" layoutX="70.0" layoutY="63.0" prefHeight="27.0" prefWidth="99.0" />
+                              <TextField fx:id="adInput" layoutX="70.0" layoutY="90.0" prefHeight="27.0" prefWidth="99.0" />
+                              <Label alignment="CENTER_RIGHT" layoutX="5.0" layoutY="35.0" prefHeight="17.0" prefWidth="55.0" text="Phone:" />
+                              <Label alignment="CENTER_RIGHT" layoutX="5.0" layoutY="65.0" prefWidth="55.0" text="e-mail:" />
+                              <Label alignment="CENTER_RIGHT" layoutX="5.0" layoutY="90.0" text="Address:" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </left>
+            </BorderPane>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
