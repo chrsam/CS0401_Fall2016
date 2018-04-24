@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="488.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment3.FXMLDocumentController">
+    <children>
+      <BorderPane fx:id="borderPane" layoutX="35.0" layoutY="50.0" prefHeight="296.0" prefWidth="517.0">
+         <center>
+            <GridPane fx:id="gridPane" prefHeight="353.0" prefWidth="446.0" style="-fx-border-color: black;" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </center>
+      </BorderPane>
+      <Label fx:id="lblSliceNum" layoutX="256.0" layoutY="390.0" prefHeight="17.0" prefWidth="23.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" prefHeight="41.0" prefWidth="366.0" text="Water Level Map Viewer">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+        <Button layoutX="414.0" layoutY="432.0" onAction="#onBrowse" text="Browse" />
+        <Label fx:id="label" layoutX="35.0" layoutY="437.0" minHeight="16" minWidth="69" text="File Name:" />
+      <TextField fx:id="pathInput" layoutX="110.0" layoutY="432.0" prefHeight="27.0" prefWidth="288.0" />
+      <Button layoutX="501.0" layoutY="432.0" mnemonicParsing="false" onAction="#onRead" text="Read" />
+      <Label fx:id="lblPlanSlice" layoutX="180.0" layoutY="390.0" prefHeight="17.0" prefWidth="79.0" text="Plan Slice #:" />
+      <Label fx:id="lblWaterVol" layoutX="298.0" layoutY="390.0" prefHeight="17.0" prefWidth="121.0" text="Water Volume:" />
+      <Button fx:id="btnFirst" layoutX="180.0" layoutY="355.0" mnemonicParsing="false" onAction="#onFirst" prefHeight="27.0" prefWidth="42.0" text="&lt;&lt;" />
+      <Button fx:id="btnPrev" layoutX="231.0" layoutY="355.0" mnemonicParsing="false" onAction="#onPrev" prefHeight="27.0" prefWidth="42.0" text="&lt;" />
+      <Button fx:id="btnNext" layoutX="281.0" layoutY="355.0" mnemonicParsing="false" onAction="#onNext" prefHeight="27.0" prefWidth="42.0" text="&gt;" />
+      <Button fx:id="btnLast" layoutX="338.0" layoutY="355.0" mnemonicParsing="false" onAction="#onLast" prefHeight="27.0" prefWidth="42.0" text="&gt;&gt;" />
+    </children>
+</AnchorPane>
