@@ -1,0 +1,122 @@
+CS 0401 Lab 01: Welcome to the Lab
+
+Note: If you do not complete the lab this week you may finish it 
+between lab meetings and demonstrate it to your TA at the beginning of 
+next week lab.
+
+1. Introduction
+
+	CS-0401 laboratory activities are created to reinforce the concepts 
+	that you have been learning in the class lectures. In each laboratory 
+	you will get an activity which has its goals. After developing your Java program that 
+	performs what has been asked, you must show your program outputs to get your grade.
+	
+	In this lab the following topics will be covered:
+	- Getting the lab assignment
+	- Creating new projects in a text editor and also in NetBeans IDE
+	- Running/Testing your code in a command window and also inside NetBeans
+	- Showing your work in to the lab TA
+	
+2. Getting the Lab Assignments 
+
+	If you are using a paper copy of this assignment and you are wondering where to get 
+	this and any future lab assignments for this course, they can be found at the 
+	following URL: http://paulobrasko.com/cs-0401-fall-2016-pitt/lab-schedule
+	
+3. Required IDE to Develop Your Programs
+	
+	You should always take advantage of the great features that an Integrated Development 
+	Environment (IDE) application offers. Within an IDE, you can edit your source code, 
+	compile, run, debug, get hints on what imports are required, get errors and warning 
+	messages, get on-the-spot java documentation of the classes and their methods, 
+	and much more.
+	
+	There are many IDEs out there, but to help the TA and the Instructor when discussing 
+	bugs in your code, etc., you are being requested to use NetBeans. All the lab 
+	computers should have NetBeans installed. If you want to install it in your own 
+	computer and need help in doing so, you can watch Video #01: “How to Install Netbeans 
+	and Java in your Computer” in my video library.
+	link: http://paulobrasko.com/cs-0401-fall-2016-pitt/course-material/videos/netbeans-videos
+	
+	Even though you will be using Netbeans IDE for developing and running your programs 
+	in this course, you, as a programmer must also have a knowledge on how you would 
+	manually compile and run your code in a terminal window. In this lab you will perform 
+	both tasks.
+	
+4. CS 0401 Code Samples
+
+	During this course, we will go over many Java code samples. These code samples are 
+	specific for a given topic discussed in the class. When studying the lines inside a 
+	java file pay attention on the statements and read all the comments. Lots of 
+	information have been placed there to facilitate your learning experience. The code 
+	samples come from two different places: a set of the code samples comes from the 
+	Textbook Editor’s website, and the other set comes from Prof. Dr. Ramirez 
+	(see “Credits” at the bottom of the main webpage of my site). Both of them can be 
+	found in the Course Handouts page.
+	link: http://paulobrasko.com/cs-0401-fall-2016-pitt/course-material/course-handouts
+	
+5. Creating and Running Your First Java Program
+
+	This lab is divided into two activities: in the first activity you will learn how to 
+	copy a sample code, compile, and run it using  the command/terminal window and a 
+	regular text editor of your preference. In the second activity you will learn how to 
+	do the same thing within NetBeans IDE.
+	
+	5.1 Creating a Program Without an IDE
+	
+		In this activity you will copy the Ex01.java code from my handouts page 
+		(Course Handouts) into your local drive, and manually compile and run it by 
+		typing Java commands in a terminal window.
+		
+		To get familiarized with the procedure that you are about to execute, please 
+		watch the following videos:
+		- Video #3: "Compiling and Running Java in a Terminal Window"
+		- Video #5: "Working with the CS 0401 Sample Codes from within a Command Window"
+		
+		Now do it yourself:
+		1.) Open Ex1.java sample code by clicking its link on the syllabus or handouts
+			page and saved it into your local directory.
+		2.) Open a terminal window and change the directory to wherever place you saved
+			Ex1.java
+		3.) Comple the code using "javac" command
+		4.) Run Ex1 program by using "java" command 
+		
+		You should get the following message printed out in the terminal window:
+			"Java is Awesome by a factor of 10"
+		If you get stuck, as the lab TA to help you. 
+		
+	5.2 Using Netbeans IDE
+	
+		To start this activity, watch video #2: A Simple Java Program at:
+		http://www.paulobrasko.com/cs-0401-fall-2016-pitt/course-material/videos/netbeans-videos/
+		
+		After watching it, do the following:
+		1.) Create a new Java Project in Netbeans under the name Ex01
+		2.) Copy and paste the EX01.java file contents into your project
+		3.) Run your project. You should get the same results in the Netbeans output 
+			screen as you got in Section 5.1 
+			
+6. Grading
+	
+	Once you have completed and self-tested your program, you should demonstrate it to 
+	your Lab TA. There will be 4 raw points for this lab, broken down in the following 
+	way:
+	- Show that you have learned how to compile your program and it is compiling without
+	error (2 points)
+	- Show that you have learned how to run your program and it prints out the expected
+	message on the terminal window (2 points)
+	The 4 raw points will be normalized to give this lab equal weight to the other labs in
+	the CS 0401 course. 
+	
+7. Challenge Yourself 
+
+	Because this is the first lab, there will be no challenge item to the done. 
+	
+8. Nots and Hints
+
+	If you need help as you are working on the program, ask your TA. If you do not finish
+	this program during your lab session, you will be given the opportunity to demonstrate
+	it to your TA at the beginning of next week's lab. However, you will be not allowed to
+	work on this lab during your next lab session, so if you do not finish it during this
+	session, be sure to finish it during the week between session. Seek help from your TA
+	or course instructor if necessary. 
